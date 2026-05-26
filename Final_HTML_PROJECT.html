@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Login Form</title>
+    <style>
+        /* Reset aur Full Page Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a, #1e293b); /* Dark Modern Theme */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #f8fafc;
+            overflow: hidden;
+        }
+
+        /* God Level Entrance Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Login Card Container */
+        .login-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(10px); /* Glassmorphism Effect */
+            padding: 40px 30px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                        inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -0.5px;
+            background: linear-gradient(to right, #ff416c, #ff4b2b); /* Neon Red Gradient Text */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Form Grouping */
+        .input-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 8px;
+            margin-left: 5px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        /* Inputs Styling (Aapka Red Glow Layout, upgraded) */
+        input[type="email"], input[type="password"] {
+            width: 100%;
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 14px 20px;
+            border: 2px solid #334155;
+            border-radius: 12px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Input Active & Hover States */
+        input[type="email"]:focus, input[type="password"]:focus,
+        input[type="email"]:hover, input[type="password"]:hover {
+            border-color: #ff416c;
+            box-shadow: 0px 0px 15px rgba(255, 65, 108, 0.4);
+            background-color: #1e293b;
+        }
+
+        /* Input ke andar focus hone par label ka color change ho */
+        .input-group:focus-within label {
+            color: #ff416c;
+        }
+
+        /* Forgot Password Link */
+        #o {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 14px;
+            color: #94a3b8;
+            margin-bottom: 25px;
+            transition: color 0.3s;
+        }
+
+        #o:hover {
+            color: #ff4b2b;
+            text-decoration: underline;
+        }
+
+        /* God Level Button */
+        button {
+            width: 100%;
+            background: linear-gradient(to right, #ff416c, #ff4b2b); /* Gradient Red Button */
+            color: white;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 12px;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(255, 65, 108, 0.3);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        button:hover {
+            transform: translateY(-2px); /* Halki si lift animation */
+            box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
+            filter: brightness(1.1);
+        }
+
+        button:active {
+            transform: translateY(1px); /* Click karne par inject mechanical feel */
+        }
+
+        a {
+            text-decoration: none;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-card">
+        <h1>Login / Sign-in</h1>
+        
+        <form>
+            <div class="input-group">
+                <label for="Email">Enter Email</label>
+                <input type="email" id="Email" placeholder="name@example.com" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="p">Enter Password</label>
+                <input type="password" id="p" placeholder="••••••••" required>
+            </div>
+
+            <a href="#" target="_blank" id="o">Forgot Password?</a><br>
+            
+            <a href="me.html">
+                <button type="button">Login</button>
+            </a>
+        </form>
+    </div>
+
+</body>
+</html>

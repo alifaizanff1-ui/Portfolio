@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan | Data</title>
+    <style>
+        /* Global Reset & Base Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b); /* Dark Slate Premium Background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #e2e8f0;
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Container Jo Content ko Bich Mein Rakhega */
+        .portfolio-container {
+            max-width: 850px;
+            width: 100%;
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px); /* Glassmorphism effect */
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Headings Styling */
+        h1 {
+            font-size: 42px;
+            font-weight: 800;
+            text-align: center;
+            background: linear-gradient(to right, #38bdf8, #818cf8); /* Cool Cyan to Indigo Gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #38bdf8;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-left: 4px solid #38bdf8;
+            padding-left: 10px;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #f1f5f9;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 16px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Image Styling (Round & Floating) */
+        .profile-img {
+            display: block;
+            margin: 0 auto 20px auto;
+            border-radius: 50%; /* Image ko round karne ke liye */
+            border: 3px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05); /* Hover par thodi badi hogi */
+        }
+
+        /* Horizontal Rules Customizing */
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, rgba(56, 189, 248, 0), rgba(56, 189, 248, 0.3), rgba(56, 189, 248, 0));
+            margin: 25px 0;
+        }
+
+        /* Lists Styling (Tech Stack & Contact) */
+        ul {
+            list-style-position: inside;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        li {
+            font-weight: 600;
+            color: #cbd5e1;
+            margin-bottom: 5px;
+        }
+
+        /* Tech Stack Subtitles */
+        h3 + ul li {
+            color: #94a3b8;
+            font-weight: 400;
+        }
+
+        /* Pre Tag for Education */
+        pre {
+            background-color: #0f172a;
+            padding: 15px;
+            border-radius: 12px;
+            color: #38bdf8;
+            font-family: 'Courier New', Courier, monospace;
+            overflow-x: auto;
+            border: 1px solid #1e293b;
+        }
+
+        /* Links Styling */
+        a {
+            color: #818cf8;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease, padding-left 0.3s ease;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: #38bdf8;
+            padding-left: 5px; /* Hover par link thoda agay move hoga */
+        }
+
+        /* Footer The End Section */
+        .footer-end {
+            text-align: center;
+            background: linear-gradient(to right, #38bdf8, #818cf8) !important;
+            -webkit-background-clip: initial !important;
+            -webkit-text-fill-color: #0f172a !important;
+            font-size: 24px;
+            font-weight: 800;
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 40px;
+            letter-spacing: 2px;
+            box-shadow: 0 10px 20px rgba(56, 189, 248, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="portfolio-container">
+        
+        <h1>Hello User!</h1>
+        
+        <img class="profile-img" src="WhatsApp Image 2026-05-25 at 21.18.38.jpeg" alt="Hello" width="200px" height="200px">
+        
+        <hr>
+        
+        <h2>About Me 😎:</h2>
+        <p>Hi, I am <strong>Faizan Murtaza</strong>, a passionate Developer based in Pakistan. I specialize in building fast, functional, and modern web applications from scratch. For me, programming isn't just about writing syntax—it is about solving real-world problems with clean logic and solid code architecture. I love taking on advanced coding challenges and turning creative ideas into proprietary software.</p>
+        
+        <hr>
+
+        <h2>My Tech Stack:</h2>
+
+        <h3>Frontend Development</h3>
+        <ul>
+            <li>Core HTML5</li>
+            <li>Semantic Structure</li>
+            <li>Modern Layouts</li>
+        </ul>
+
+        <h3>Programming & Automation</h3>
+        <ul>
+            <li>Python Scripting</li>
+            <li>Network Tools</li>
+            <li>System Automation</li>
+        </ul>
+
+        <h3>Core Concepts</h3>
+        <ul>
+            <li>Logic Building</li>
+            <li>Clean Code Architecture</li>
+            <li>Database Management</li>
+        </ul>
+        <hr>
+
+        <h2>FEATURED PROJECTS:</h2>
+
+        <h3>Project Title 1: Ghost Core (System Utility & Network Scanner)</h3>
+        <p>Developed a multi-featured <b>Python</b> desktop utility designed for <i>system monitoring, reporting, and network scanning.</i> This project focuses heavily on automation and core <b>backend</b> logic.</p>
+        
+        <hr>
+
+        <h3>Project Title 2: Advanced Digital Inventory System</h3>
+        <p>Built a comprehensive web interface designed for retail and stationery businesses. It features structured product catalogs, dynamic item sorting, and an efficient data management workflow.</p>
+        
+        <hr>
+
+        <h2>EDUCATION:</h2>
+        <h4>Matriculation in Computer Science</h4>
+        <pre>Gujranwala Board
+Focus Areas: Computer Science, Physics, Mathematics, and Chemistry.</pre>
+        
+        <hr>
+        
+        <h4>Intermediate in Information Technology (In Progress)</h4>
+        <p>Specialization in Information Technology, Advanced Web Concepts, and Software Engineering Foundations.</p>
+        
+        <hr>
+        
+        <h2>CONTACT ME:</h2>
+        <ul style="list-style-type: circle;">
+            <li>Email</li>
+            <a href="mailto:alifaizanff1@gmail.com">alifaizanff1@gmail.com</a><br><br>
+            <li>Github/Portfolio</li>
+            <a href="https://github.com/alifaizanff1-ui" target="_blank">Github</a><br><br>
+            <li>Location</li>
+            <a href="https://www.google.com/maps/place/Mohri+Sharif,+Pakistan/@32.7883482,73.8201663,12z/data=!4m6!3m5!1s0x391f9ede3413f0b9:0x7b404feb8e8c118d!8m2!3d32.7994829!4d73.7919103!16s%2Fm%2F0bh8mk7?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">Mohri Sharif Kharian, Gujrat</a>
+        </ul>
+        
+        <hr>
+
+        <h1 class="footer-end">THE END</h1>
+        
+    </div>
+    </body>
+</html>
